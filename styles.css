@@ -9,6 +9,20 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--almost-white);
+    font-family: var(--font);
+}
+
+.page {
+    height: 100dvh;
+}
+
+.side-menu {
+    height: 100%;
+    width: 60%;
+    position: absolute;
+    left: 40%;
+    background-color: black;
+    z-index: 1;
 }
 
 header {
@@ -32,7 +46,6 @@ header {
 }
 
 .title {
-    font-family: var(--font);
     color: var(--almost-black);
     font-size: 2.2rem;
     font-weight: 700;
@@ -40,8 +53,31 @@ header {
 
 .sub-text {
     color: var(--medium-gray);
-    font-family: var(--font);
     font-size: 1rem;
+}
+
+.button {
+    padding: 0.6rem .9rem;
+    border-radius: 0.8rem;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.learn {
+    color: var(--almost-white);
+    background-color: var(--almost-black);
+}
+
+.learn:hover {
+    color: var(--almost-black);
+    background-color: var(--almost-white);
+}
+
+.logos {
+    padding: 3rem 0.2rem;
+    display: flex;
+    justify-content: space-between;
+    height: 1.1rem;
 }
 
 .attribution {
