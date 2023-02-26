@@ -2,6 +2,46 @@
 --almost-white: hsl(0, 0%, 98%);
 --medium-gray: hsl(0, 0%, 41%);
 --almost-black: hsl(0, 0%, 8%);
+--font: 'Epilogue', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--almost-white);
+}
+
+header {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    opacity: 60%;
+}
+
+.hero {
+    content: url('./images/image-hero-mobile.png');
+    width: 100%;
+}
+
+.content {
+    padding: 1rem;
+    text-align: center;
+}
+
+.title {
+    font-family: var(--font);
+    color: var(--almost-black);
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.sub-text {
+    color: var(--medium-gray);
+    font-family: var(--font);
+    font-size: 1rem;
 }
 
 .attribution {
