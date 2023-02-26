@@ -28,16 +28,57 @@ body {
     flex-direction: column;
 }
 
+.menu-items {
+    padding: 0 1rem;
+    max-width: 100%;
+}
+
 .options-list {
     list-style: none;
     color: var(--medium-gray);
+    padding: 0;
+    margin-top: 0;
 }
 
 .options-list li {
     margin-bottom: 1.5rem;
+    list-style: none;
 }
+
+.options-list li:before {
+    padding-right: 0.5rem;
+}
+
+.options-list li:first-child {
+    margin-top: 1.5rem;
+}
+
 .options-list li:last-child {
     margin-bottom: 0.3rem;
+}
+
+.todo::before {
+    position: relative;
+    top:2px;
+    content: url('./images/icon-todo.svg');
+}
+
+.calendar::before{
+    position: relative;
+    top:2px;
+    content: url('./images/icon-calendar.svg');
+}
+
+.reminders::before{
+    position: relative;
+    top:2px;
+    content: url('./images/icon-reminders.svg');
+}
+
+.planning::before{
+    position: relative;
+    top:2px;
+    content: url('./images/icon-planning.svg');
 }
 
 .options-list-arrow {
