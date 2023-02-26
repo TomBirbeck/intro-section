@@ -14,13 +14,36 @@
 
 <header>
   <img src="./images/logo.svg" alt="logo">
-  <div><img class="menu" src="./images/icon-menu.svg" alt=""></div>
+  <div><img class="menu" src="./images/icon-menu.svg" alt="" onclick=""></div>
 </header>
 
 <body>  
   <main>
     <div class="page">
-      <aside class="side-menu hidden"></aside>
+      <aside class="side-menu">
+        <ol class="options-list">
+          <li>Features <span class="options-list-arrow"></span>
+            <ol hidden>
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+            </ol>
+          </li>
+          <li>Company <span class="options-list-arrow"></span>
+            <ol hidden>
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+            </ol>
+          </li>
+          <li>Careers</li>
+          <li>About</li>
+        </ol>
+      <button class="button login">Login</button>
+      <button class="button register">Register</button>
+      </aside>
     <img class="hero" alt="">
     <div class="content">
       <h1 class="title">Make remote work</h1>
@@ -37,13 +60,6 @@
       </div>
     </div>
     </div>
-    Features
-    Company
-    Careers
-    About
-  
-    Login
-    Register
   </main>
   
   <footer>

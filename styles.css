@@ -18,11 +18,30 @@ body {
 
 .side-menu {
     height: 100%;
-    width: 60%;
+    width: 65%;
     position: absolute;
-    left: 40%;
-    background-color: black;
+    left: 35%;
+    background-color: var(--almost-white);
     z-index: 1;
+    transition: ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+
+.options-list {
+    list-style: none;
+    color: var(--medium-gray);
+}
+
+.options-list li {
+    margin-bottom: 1.5rem;
+}
+.options-list li:last-child {
+    margin-bottom: 0.3rem;
+}
+
+.options-list-arrow {
+    content: url('./images/icon-arrow-down.svg');
 }
 
 header {
@@ -58,7 +77,7 @@ header {
 
 .button {
     padding: 0.6rem .9rem;
-    border-radius: 0.8rem;
+    border-radius: 0.9rem;
     font-weight: 700;
     font-size: 1rem;
 }
@@ -70,6 +89,22 @@ header {
 
 .learn:hover {
     color: var(--almost-black);
+    background-color: var(--almost-white);
+}
+
+.login {
+    border: none;
+    width: 80%;
+    align-self: center;
+    color: var(--medium-gray);
+    margin-bottom: 0.5rem;
+    background-color: var(--almost-white);
+}
+
+.register {
+    width: 80%;
+    align-self: center;
+    color: var(--medium-gray);
     background-color: var(--almost-white);
 }
 
