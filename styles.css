@@ -12,7 +12,6 @@ body {
     font-family: var(--font);
 }
 
-
 .page {
     height: 100dvh;
 }
@@ -24,9 +23,10 @@ body {
     left: 35%;
     background-color: var(--almost-white);
     z-index: 1;
-    transition: ease-in-out;
     display: flex;
     flex-direction: column;
+    opacity: 0;
+    transition: 1.5s ease-in-out;
 }
 
 .menu-items {
@@ -98,12 +98,28 @@ header {
     background-color: var(--almost-white);
 }
 
+/* .menu-img {
+    content: url('./images/icon-menu.svg');
+    opacity: 60%;
+    height: 1.5rem;
+    width: 2rem;
+    transition: 2s ease-in-out;
+} */
+
+
+.menu-button img {
+    height: 1.5rem;
+    width: 2rem;
+    transition: 1.5s ease-in-out;
+}
+
 .menu {
+    position:absolute;
     opacity: 60%;
 }
 
 .close-menu {
-    opacity: 60%;
+    opacity: 0;
 }
 
 .hero {

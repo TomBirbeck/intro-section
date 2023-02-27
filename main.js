@@ -1,32 +1,25 @@
 const menu = document.querySelector('.menu')
 const sideMenu = document.querySelector('.side-menu')
 const closeMenu = document.querySelector('.close-menu')
+const menuButton = document.querySelector('.menu-button')
+// const image = document.querySelector('.menu-img')
 
-console.log(sideMenu.style.display)
+
 
 const handleMenu = () => {
     
-    if (sideMenu.classList.contains('hidden')){
-        menu.classList.add('hidden')
-        sideMenu.classList.remove('hidden')
-        closeMenu.classList.remove('hidden')
+    if (sideMenu.style.opacity === '0'|| sideMenu.style.opacity === ""){
+        menu.style.opacity = 0;
+        sideMenu.style.opacity = 1;
+        closeMenu.style.opacity = 0.6;
     }
     else {
-        closeMenu.classList.add('hidden')
-        menu.classList.remove('hidden')
-        sideMenu.classList.add('hidden')
+        closeMenu.style.opacity = 0;
+        menu.style.opacity = 0.6;
+        sideMenu.style.opacity = 0
     }
-    // if (sideMenu.style.display !== 'none'){
-    //     sideMenu.style.display = 'none'
-    //     closeMenu.style.display = 'none'
-    //     menu.style.display = 'block'
-    // }
-    // else {
-    //     sideMenu.style.display = 'flex'
-    //     menu.style.display = 'none'
-    //     closeMenu.style.display = 'block'
-    // }
 }
 
-menu.addEventListener('click', handleMenu)
-closeMenu.addEventListener('click', handleMenu)
+// menu.addEventListener('click', handleMenu)
+// closeMenu.addEventListener('click', handleMenu)
+menuButton.addEventListener('click', handleMenu)
