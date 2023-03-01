@@ -82,9 +82,36 @@ body {
     content: url('./images/icon-planning.svg');
 }
 
+.option-with-dropdown a {
+    text-decoration: none;
+    color: var(--medium-gray);
+}
+
+
 .options-list-arrow {
+    padding-left: 0.3rem;
     content: url('./images/icon-arrow-down.svg');
 }
+
+.options-list-arrow:hover {
+    content: url('./images/icon-arrow-up.svg');
+}
+
+.dropdown {
+    opacity: 0;
+    height: 0;
+    transition: 1s ease-in-out;
+}
+
+.dropdown li {
+    margin-bottom: 0;
+}
+
+.option-with-dropdown:hover .dropdown {
+    opacity: 1;
+    height: fit-content;
+}
+
 
 header {
     padding: 1rem;
