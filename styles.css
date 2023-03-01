@@ -98,15 +98,6 @@ header {
     background-color: var(--almost-white);
 }
 
-/* .menu-img {
-    content: url('./images/icon-menu.svg');
-    opacity: 60%;
-    height: 1.5rem;
-    width: 2rem;
-    transition: 2s ease-in-out;
-} */
-
-
 .menu-button img {
     height: 1.5rem;
     width: 2rem;
@@ -169,11 +160,21 @@ header {
     background-color: var(--almost-white);
 }
 
+.login:hover {
+    color: var(--almost-black);
+}
+
 .register {
     width: 80%;
     align-self: center;
     color: var(--medium-gray);
     background-color: var(--almost-white);
+    border-color: var(--medium-gray);
+}
+
+.register:hover {
+    color: var(--almost-black);
+    border-color: var(--almost-black);
 }
 
 .logos {
