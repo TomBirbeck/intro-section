@@ -13,12 +13,41 @@
 </head>
 
 <header>
-  <img src="./images/logo.svg" alt="logo">
-  <button class="menu-button">
-    <!-- <img class="menu-img" src="" alt=""> -->
-    <img class="menu" src="./images/icon-menu.svg" alt="">
-    <img class="close-menu" src="./images/icon-close-menu.svg" alt="">
-  </button>
+  <nav class="mobile-nav">
+    <img src="./images/logo.svg" alt="logo">
+    <button class="menu-button">
+      <img class="menu" src="./images/icon-menu.svg" alt="">
+      <img class="close-menu" src="./images/icon-close-menu.svg" alt="">
+    </button>
+  </nav>
+  <nav class="desktop-nav">
+    <div class="nav-dropdowns">
+    <img src="./images/logo.svg" alt="logo">
+    <ul class="desktop-options-list">
+      <li class="desktop-option-with-dropdown"><a href="#">Features<img class="options-list-arrow" alt=""></a>
+        <!-- <ul class="dropdown">
+          <li class="todo"><a>Todo List</a></li>
+          <li class="calendar"><a>Calendar</a></li>
+          <li class="reminders"><a>Reminders</a></li>
+          <li class="planning"><a>Planning</a></li>
+        </ul> -->
+      </li>
+      <li class="desktop-option-with-dropdown"><a href="#">Company<img class="options-list-arrow" alt=""></a>
+        <!-- <ul class="dropdown">
+          <li><a>History</a></li>
+          <li><a>Our Team</a></li>
+          <li><a>Blog</a></li>
+        </ul> -->
+      </li>
+      <li><a href="#">Careers</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </div>
+  <div class="nav-buttons">
+    <button class="button login">Login</button>
+    <button class="button register">Register</button>
+  </div>
+  </nav>
 </header>
 
 <body>  

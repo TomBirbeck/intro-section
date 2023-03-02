@@ -16,6 +16,15 @@ body {
     height: 100dvh;
 }
 
+.mobile-nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.desktop-nav {
+    display: none;
+}
+
 .side-menu {
     height: 100%;
     width: 65%;
@@ -39,6 +48,20 @@ body {
     color: var(--medium-gray);
     padding: 0;
     margin-top: 0;
+}
+
+.desktop-options-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+    display: flex;
+    gap: 3rem;
+    padding-left: 4rem;
+
+}
+.desktop-options-list a{
+    text-decoration: none;
+    color: var(--medium-gray);
 }
 
 .options-list a {
@@ -230,10 +253,26 @@ header {
 @media screen and (min-width: 800px) {
     .page {
         display: grid;
-        grid-template-areas: "content hero";
+        grid-template-areas:"content hero";
     }
-    .menu-button {
+    .mobile-nav {
         display: none;
+    }
+    .desktop-nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav-dropdowns{
+        display: flex;
+    }
+    .nav-buttons{
+        display: flex;
+    }
+    .options-list{
+        display: flex;
+        margin: 0;
     }
     .content {
         grid-area: content;
