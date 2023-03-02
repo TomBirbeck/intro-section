@@ -41,6 +41,11 @@ body {
     margin-top: 0;
 }
 
+.options-list a {
+        text-decoration: none;
+        color: var(--medium-gray);
+}
+
 .options-list li {
     margin-bottom: 1.5rem;
     list-style: none;
@@ -82,12 +87,6 @@ body {
     content: url('./images/icon-planning.svg');
 }
 
-.option-with-dropdown a {
-    text-decoration: none;
-    color: var(--medium-gray);
-}
-
-
 .options-list-arrow {
     padding-left: 0.3rem;
     content: url('./images/icon-arrow-down.svg');
@@ -103,14 +102,18 @@ body {
     transition: 1s ease-in-out;
 }
 
-.dropdown li {
+/* .dropdown li {
     margin-bottom: 0;
-}
+} */
 
 .option-with-dropdown:hover .dropdown {
     opacity: 1;
     height: fit-content;
 }
+
+/* .option-with-dropdown:hover .dropdown li {
+    margin-bottom: 1.5rem;
+} */
 
 
 header {
@@ -222,4 +225,23 @@ header {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 800px) {
+    .page {
+        display: grid;
+        grid-template-areas: "content hero";
+    }
+    .menu-button {
+        display: none;
+    }
+    .content {
+        grid-area: content;
+    }
+    .hero {
+        grid-area: hero;
+        height: 100%;
+        content: url('./images/image-hero-desktop.png');
+    }
+    
 }
