@@ -10,10 +10,12 @@ body {
     padding: 0;
     background-color: var(--almost-white);
     font-family: var(--font);
+    display: flex;
+    flex-direction: column;
 }
 
 .page {
-    height: 100dvh;
+    height: 100%;
 }
 
 .mobile-nav {
@@ -55,10 +57,14 @@ body {
 .desktop-options-list {
     list-style: none;
     padding: 0;
-    margin-top: 0;
+    margin: 0;
     display: flex;
-    gap: 3rem;
-    padding-left: 4rem;
+    padding-left: 2rem;
+    width: 35vw;
+}
+
+.desktop-options-list li:nth-child(n+3){
+    padding-left: 1rem;
 }
 
 .desktop-options-list li{
@@ -131,11 +137,6 @@ body {
     transition: 1s ease-in-out;
 }
 
-/* .dropdown li {
-    margin-bottom: 0;
-} */
-
-
 .desktop-option-with-dropdown:hover .dropdown{
     opacity: 1;
 }
@@ -144,10 +145,6 @@ body {
     opacity: 1;
     height: fit-content;
 }
-
-/* .option-with-dropdown:hover .dropdown li {
-    margin-bottom: 1.5rem;
-} */
 
 .menu-button {
     border: none;
@@ -189,6 +186,7 @@ body {
 .sub-text {
     color: var(--medium-gray);
     font-size: 1rem;
+    line-height: 1.5rem
 }
 
 .button {
@@ -241,11 +239,8 @@ body {
     height: 1.1rem;
 }
 
-.hidden {
-    display: none;
-}
-
 .attribution {
+    margin-top: 2rem;
     font-size: 11px;
     text-align: center;
 }
@@ -260,7 +255,7 @@ body {
         grid-template-columns: 1fr 1fr;
         grid-template-areas:"content hero";
         padding: 0 6rem;
-        column-gap: 1.5rem;
+        column-gap: 6rem;
     }
     .mobile-nav {
         display: none;
@@ -291,25 +286,38 @@ body {
     }
     .content {
         grid-area: content;
-        padding-top: 10%;
+        padding: 10% 0 0 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
     .hero {
         grid-area: hero;
+        height: 100%;
         content: url('./images/image-hero-desktop.png');
     }
 
     .title {
         font-size: 5rem;
         text-align: left;
+        margin-bottom: 0;
     }
 
     .sub-text {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         text-align: left;
+        line-height: 1.7rem;
+        margin: 0;
     }
 
-    .test {
-        padding: 0 1rem;
+    .learn {
+        align-self: flex-start;
+    }
+
+    .logos {
+        margin-top: 20%;
+        padding: 0;
+        height: 2rem;
     }
     
 }
