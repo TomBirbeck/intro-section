@@ -27,6 +27,7 @@ body {
 .desktop-nav {
     display: none;
     text-align: center;
+    max-height: 2rem;
 }
 
 .side-menu {
@@ -132,18 +133,18 @@ body {
 }
 
 .dropdown {
-    opacity: 0;
-    height: 0;
+    display: none;
     transition: 1s ease-in-out;
 }
 
 .desktop-option-with-dropdown:hover .dropdown{
-    opacity: 1;
+    display: block;
+    height: 0;
+    z-index: 10;
 }
 
 .option-with-dropdown:hover .dropdown {
-    opacity: 1;
-    height: fit-content;
+    display: block;
 }
 
 .menu-button {
@@ -319,5 +320,9 @@ body {
         padding: 0;
         height: 2rem;
     }
+
+.options-list {
+    display: none;
+}
     
 }
